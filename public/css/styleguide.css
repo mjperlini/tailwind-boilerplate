@@ -1,0 +1,401 @@
+:root {
+  --background-convex-convex-bg-high: 15px 15px 21px 0px rgba(0, 0, 0, 0.6),
+    -12px -12px 21px 0px rgba(255, 255, 255, 0.6),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.2),
+    -3px -3px 6px 0px rgba(255, 255, 255, 0.21);
+  --background-convex-convex-bg-low: 1px 1px 6px 0px rgba(0, 0, 0, 0.6),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.2),
+    -1px -1px 6px 0px rgba(255, 255, 255, 0.6);
+  --background-convex-convex-bg-med: 9px 9px 12px 0px rgba(0, 0, 0, 0.6),
+    -6px -6px 12px 0px rgba(255, 255, 255, 0.6),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.2),
+    -3px -3px 6px 0px rgba(255, 255, 255, 0.21);
+  --background-convex-dent-convex-dent-bg-deep: 18px 18px 21px 0px
+      rgba(0, 0, 0, 0.6),
+    -12px -12px 21px 0px rgba(255, 255, 255, 0.36),
+    5px 5px 9px 0px rgba(0, 0, 0, 0.2);
+  --background-convex-dent-convex-dent-bg-low: 12px 12px 12px 0px
+      rgba(0, 0, 0, 0.6),
+    -6px -6px 12px 0px rgba(255, 255, 255, 0.36),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  --background-convex-dent-convex-dent-bg-med: 15px 15px 12px 0px
+      rgba(0, 0, 0, 0.6),
+    -9px -9px 12px 0px rgba(255, 255, 255, 0.36),
+    3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  --background-convex-dent-with-stroke-convex-dent-bg-wstroke-low: 12px 12px
+      12px 0px rgba(0, 0, 0, 0.6),
+    -6px -6px 12px 0px rgba(255, 255, 255, 0.6),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  --background-convex-dent-with-stroke-convex-dent-wstroke-deep: 18px 18px 30px
+      0px rgba(0, 0, 0, 0.6),
+    -12px -12px 30px 0px rgba(255, 255, 255, 0.6),
+    5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  --background-convex-dent-with-stroke-convex-dent-wstroke-med: 15px 15px 18px
+      0px rgba(0, 0, 0, 0.6),
+    -9px -9px 18px 0px rgba(255, 255, 255, 0.6),
+    3px 3px 6px 0px rgba(0, 0, 0, 0.2);
+  --background-dent-dent-bg-deep: 4px 3px 9px 0px rgba(255, 255, 255, 0.3),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.08);
+  --background-dent-dent-bg-low: 4px 3px 9px 0px rgba(255, 255, 255, 0.3),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.08);
+  --background-dent-dent-bg-med: 4px 3px 9px 0px rgba(255, 255, 255, 0.3),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.08);
+  --background-dent-with-stroke-dent-bg-wstroke-deep: 4px 3px 9px 0px
+      rgba(255, 255, 255, 0.3),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.08);
+  --background-dent-with-stroke-dent-bg-wstroke-low: 4px 3px 9px 0px
+      rgba(255, 255, 255, 0.3),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.48);
+  --background-dent-with-stroke-dent-bg-wstroke-med: 4px 3px 9px 0px
+      rgba(255, 255, 255, 0.3),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.08);
+  --background-digital-display-digital-display: -1px -1px 1px 0px rgba(255, 255, 255, 0.51),
+    1px 1px 1px 0px rgba(0, 0, 0, 0.6);
+  --background-floating-floating-bg-high: 18px 18px 30px 0px rgba(0, 0, 0, 0.6),
+    5px 5px 9px 0px rgba(0, 0, 0, 0.2);
+  --background-floating-floating-bg-low: 9px 9px 12px 0px rgba(0, 0, 0, 0.6),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  --background-floating-floating-bg-med: 12px 12px 18px 0px rgba(0, 0, 0, 0.6),
+    3px 3px 6px 0px rgba(0, 0, 0, 0.2);
+  --background-glass-convex-glass-convex-bg-high: 12px 12px 18px 0px
+      rgba(0, 0, 0, 0.19),
+    -9px -9px 18px 0px rgba(255, 255, 255, 0.1),
+    -6px -6px 12px 0px rgba(255, 255, 255, 0.21),
+    3px 3px 6px 0px rgba(255, 255, 255, 0.21);
+  --background-glass-convex-glass-convex-bg-low: 3px 4px 9px 0px
+      rgba(0, 0, 0, 0.19),
+    -3px -3px 9px 0px rgba(255, 255, 255, 0.1),
+    -1px -1px 3px 0px rgba(255, 255, 255, 0.21),
+    1px 1px 4px 0px rgba(255, 255, 255, 0.21);
+  --background-glass-convex-glass-convex-bg-med: 9px 9px 12px 0px
+      rgba(0, 0, 0, 0.19),
+    -6px -6px 12px 0px rgba(255, 255, 255, 0.1),
+    -3px -3px 6px 0px rgba(255, 255, 255, 0.21),
+    1px 1px 6px 0px rgba(255, 255, 255, 0.21);
+  --background-glass-convex-glass-floating-bg: 9px 9px 12px 0px
+      rgba(0, 0, 0, 0.19),
+    6px 6px 12px 0px rgba(255, 255, 255, 0.1),
+    3px 3px 6px 0px rgba(255, 255, 255, 0.21);
+  --background-glassglass-convex-bg: rgba(240, 240, 240, 0.09);
+  --background-glassglass-dent-bg: rgba(240, 240, 240, 0.12);
+  --background-glassglass-stroke: linear-gradient(
+    154deg,
+    rgba(255, 255, 255, 0.15) 4.75%,
+    rgba(255, 255, 255, 0.06) 83.69%
+  );
+  /* --background-glassglass-stroke: rgb(255, 255, 255); */
+  --background-glassglass-stroke-dent-bg: rgba(255, 255, 255, 0.3);
+  --background-glassglass-stroke-squashed: rgba(255, 255, 255, 0.2);
+  --background-squashed-squashed-bg-deep: 1px 1px 4px 0px rgba(0, 0, 0, 0.6),
+    -2px -2px 4px 0px rgba(255, 255, 255, 0.36),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  --background-squashed-squashed-bg-low: 1px 1px 4px 0px rgba(0, 0, 0, 0.6),
+    -2px -2px 4px 0px rgba(255, 255, 255, 0.36),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  --background-squashed-squashed-bg-med: 1px 1px 4px 0px rgba(0, 0, 0, 0.6),
+    -2px -2px 4px 0px rgba(255, 255, 255, 0.36),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  --backgrounddark-grey-bg: rgba(225, 225, 225, 1);
+  --backgrounddarker-white-bg: rgba(237, 237, 237, 1);
+  --backgrounddigital-display-bg: rgba(168, 171, 161, 1);
+  --backgroundflat-dent-bg-darker: rgba(237, 237, 237, 1);
+  --backgroundflat-dent-bg-white: rgba(240, 240, 240, 1);
+  --backgroundgrey-bg: rgba(236, 236, 236, 1);
+  --backgroundstroke-digital-display: rgba(114, 117, 114, 1);
+  --backgroundstroke-grey: rgba(225, 225, 225, 1);
+  --backgroundstroke-sqashed: rgba(238, 238, 238, 1);
+  --backgroundwhite-bg: rgba(240, 240, 240, 1);
+  --button-background-glass-glass-button: 3px 2px 18px 2px rgba(0, 0, 0, 0.3)
+      inset,
+    9px 9px 12px 0px rgba(0, 0, 0, 0.19),
+    -6px -6px 12px 0px rgba(255, 255, 255, 0.1),
+    -3px -3px 6px 0px rgba(255, 255, 255, 0.12),
+    1px 1px 6px 0px rgba(255, 255, 255, 0.21);
+  --button-background-glass-glass-button-a: -2px -2px 4px 0px rgba(255, 255, 255, 0.09),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  --button-background-glass-glass-button-a-pressed: -2px -2px 4px 0px rgba(255, 255, 255, 0.09),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  --button-background-glass-glass-button-pressed: 3px 4px 9px 0px
+      rgba(0, 0, 0, 0.19),
+    -3px -3px 9px 0px rgba(255, 255, 255, 0.1),
+    -1px -1px 3px 0px rgba(255, 255, 255, 0.15),
+    1px 1px 4px 0px rgba(255, 255, 255, 0.21);
+  --button-background-glassglass-button-bg: rgba(240, 240, 240, 0.09);
+  --button-background-glassglass-button-bg-a: rgba(240, 240, 240, 0.09);
+  --button-background-standard-button-bg: 9px 9px 12px 0px rgba(0, 0, 0, 0.6),
+    -6px -6px 12px 0px rgba(255, 255, 255, 0.6),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.2),
+    -3px -3px 6px 0px rgba(255, 255, 255, 0.21);
+  --button-background-standard-button-bg-a: 1px 1px 4px 0px rgba(0, 0, 0, 0.3),
+    -2px -2px 4px 0px rgba(255, 255, 255, 0.36),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  --button-background-standard-button-bg-a-pressed: 1px 1px 4px 0px
+      rgba(0, 0, 0, 0.3),
+    -2px -2px 4px 0px rgba(255, 255, 255, 0.36),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  --button-background-standard-button-bg-ina: 4px 3px 9px 0px
+      rgba(255, 255, 255, 0.3),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.04);
+  --button-background-standard-button-bg-pressed: 1px 1px 6px 0px
+      rgba(0, 0, 0, 0.6),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.15),
+    -1px -1px 6px 0px rgba(255, 255, 255, 0.6);
+  --button-backgroundbutton-bg: rgba(240, 240, 240, 1);
+  --button-backgroundbutton-bg-a: rgba(240, 240, 240, 1);
+  --button-backgroundbutton-bg-ina: rgba(233, 233, 233, 1);
+  --button-glass-round-9-font-family: "Montserrat", Helvetica;
+  --button-glass-round-9-font-size: 9px;
+  --button-glass-round-9-font-style: normal;
+  --button-glass-round-9-font-weight: 300;
+  --button-glass-round-9-letter-spacing: 2.5999999046325684px;
+  --button-glass-round-9-line-height: normal;
+  --button-medium-font-family: "Montserrat", Helvetica;
+  --button-medium-font-size: 15px;
+  --button-medium-font-style: normal;
+  --button-medium-font-weight: 500;
+  --button-medium-letter-spacing: 0.0031056522857397795px;
+  --button-medium-line-height: 18px;
+  --button-round-7-font-family: "Montserrat", Helvetica;
+  --button-round-7-font-size: 7px;
+  --button-round-7-font-style: normal;
+  --button-round-7-font-weight: 700;
+  --button-round-7-letter-spacing: 2.013948917388916px;
+  --button-round-7-line-height: normal;
+  --button-round-9-font-family: "Montserrat", Helvetica;
+  --button-round-9-font-size: 9px;
+  --button-round-9-font-style: normal;
+  --button-round-9-font-weight: 700;
+  --button-round-9-letter-spacing: 2.5999999046325684px;
+  --button-round-9-line-height: normal;
+  --button-standard-font-family: "Montserrat", Helvetica;
+  --button-standard-font-size: 18px;
+  --button-standard-font-style: normal;
+  --button-standard-font-weight: 600;
+  --button-standard-letter-spacing: 0.0037267825100570917px;
+  --button-standard-line-height: 25px;
+  --caption-switch-caption-font-family: "Montserrat", Helvetica;
+  --caption-switch-caption-font-size: 13px;
+  --caption-switch-caption-font-style: normal;
+  --caption-switch-caption-font-weight: 700;
+  --caption-switch-caption-letter-spacing: 0px;
+  --caption-switch-caption-line-height: normal;
+  --elements-analog-display-color-mark: -2px -2px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 0px 1px 0px rgba(255, 255, 255, 0.24);
+  --elements-graph-curve-classic: 1px 1px 2px 0px rgba(0, 0, 0, 0.18);
+  --elements-knob-floating-knob-bg: 9px 9px 12px 0px rgba(0, 0, 0, 0.39),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  --elements-separator-dark-separator: 4px 3px 9px 0px rgba(255, 255, 255, 0.08),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.04);
+  --elements-separator-separator: 4px 3px 9px 0px rgba(255, 255, 255, 0.3),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.04);
+  --elementsanalog-displayanalog-display-bg: rgba(237, 237, 237, 1);
+  --elementsanalog-displayanalog-display-shadow: rgba(0, 0, 0, 0);
+  --elementsgraph-curveanalog: rgba(176, 99, 99, 1);
+  --elementsgraph-curveclassic: rgba(53, 53, 53, 1);
+  --elementsgraph-curvegraph-curve-white: rgba(255, 255, 255, 1);
+  --elementsknobswitch-knob-bg: rgba(240, 240, 240, 1);
+  --elementsseparatorseparator: rgba(247, 247, 247, 1);
+  --icon-flat-black: 1px 1px 2px 0px rgba(0, 0, 0, 0.1),
+    -1px -1px 2px 0px rgba(255, 255, 255, 0.9);
+  --icon-flat-light: 0px 0px 12px 0px rgba(110, 212, 90, 1),
+    0px 0px 12px 0px rgba(110, 212, 90, 1);
+  --icon-flat-light-2: 0px 0px 3px 0px rgba(255, 255, 255, 1),
+    0px 0px 6px 0px rgba(255, 255, 255, 1);
+  --icon-flat-light-red: 0px 0px 3px 0px rgba(223, 41, 41, 1),
+    0px 0px 6px 0px rgba(223, 41, 41, 1);
+  --icon-flat-raster: -1px -1px 2px 0px rgba(255, 255, 255, 0.9),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  --icon-heavy-deep-icon: -1px -1px 3px 0px rgba(0, 0, 0, 0.09),
+    1px 1px 2px 0px rgba(255, 255, 255, 1);
+  --icon-heavy-heavy-icon-blue: -1px -1px 3px 0px rgba(0, 0, 0, 0.09),
+    1px 1px 2px 0px rgba(255, 255, 255, 1),
+    0px 0px 18px 0px rgba(106, 143, 213, 0.5);
+  --icon-heavy-heavy-icon-green: -1px -1px 3px 0px rgba(0, 0, 0, 0.09),
+    1px 1px 2px 0px rgba(255, 255, 255, 1),
+    0px 0px 18px 0px rgba(108, 197, 151, 0.5);
+  --icon-heavy-heavy-icon-orange: -1px -1px 3px 0px rgba(0, 0, 0, 0.09),
+    1px 1px 2px 0px rgba(255, 255, 255, 1),
+    0px 0px 18px 0px rgba(218, 146, 98, 0.5);
+  --icon-heavy-heavy-icon-purple: -1px -1px 3px 0px rgba(0, 0, 0, 0.09),
+    1px 1px 2px 0px rgba(255, 255, 255, 1),
+    0px 0px 18px 0px rgba(127, 106, 213, 0.5);
+  --icon-heavy-heavy-icon-red: -1px -1px 3px 0px rgba(0, 0, 0, 0.09),
+    1px 1px 2px 0px rgba(255, 255, 255, 1),
+    0px 0px 18px 0px rgba(213, 106, 106, 0.5);
+  --icon-heavy-heavy-icon-yellow: -1px -1px 3px 0px rgba(0, 0, 0, 0.09),
+    1px 1px 2px 0px rgba(255, 255, 255, 1),
+    0px 0px 18px 0px rgba(213, 175, 106, 0.5);
+  --icon-heavy-social-facebook: -1px -1px 3px 0px rgba(0, 0, 0, 0.09),
+    1px 1px 2px 0px rgba(255, 255, 255, 1),
+    0px 0px 18px 0px rgba(66, 103, 178, 0.3);
+  --icon-heavy-social-google: -1px -1px 3px 0px rgba(0, 0, 0, 0.09),
+    1px 1px 2px 0px rgba(255, 255, 255, 1),
+    0px 0px 18px 0px rgba(219, 74, 57, 0.3);
+  --icon-heavy-social-twitter: -1px -1px 3px 0px rgba(0, 0, 0, 0.09),
+    1px 1px 2px 0px rgba(255, 255, 255, 1),
+    0px 0px 18px 0px rgba(29, 161, 242, 0.3);
+  --icon-simple-colored: -2px -2px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 0px 1px 0px rgba(255, 255, 255, 0.24);
+  --icon-simple-convex: 4px 3px 9px 0px rgba(255, 255, 255, 0.3),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.04);
+  --icon-simple-dent: 4px 3px 9px 0px rgba(255, 255, 255, 0.3),
+    -3px -2px 12px 0px rgba(0, 0, 0, 0.11);
+  --iconflatblack: rgba(81, 81, 81, 1);
+  --iconflatflat-icon-light: rgba(255, 255, 255, 1);
+  --iconflatflat-icon-light-grey: rgba(223, 223, 223, 1);
+  --iconflatflat-icon-light-off: rgba(255, 255, 255, 1);
+  --iconflatflat-icon-white: rgba(253, 253, 253, 1);
+  --iconflatgrey: rgba(211, 211, 211, 1);
+  --iconflatlight-green: rgba(41, 223, 137, 1);
+  --iconflatlight-grey: rgba(223, 223, 223, 1);
+  --iconflatlight-red: rgba(223, 41, 41, 1);
+  --iconflatwhite: rgba(253, 253, 253, 1);
+  --iconheavyblack-heavy-icon: rgba(85, 85, 85, 1);
+  --iconheavyblank-heavy-icon: rgba(211, 211, 211, 1);
+  --iconheavydeep-heavy-icon-blue: rgba(121, 129, 147, 1);
+  --iconheavydeep-heavy-icon-brown: rgba(130, 114, 114, 1);
+  --iconheavydeep-heavy-icon-green: rgba(132, 160, 148, 1);
+  --iconheavydeep-heavy-icon-pink: rgba(179, 147, 161, 1);
+  --iconheavydeep-heavy-icon-purple: rgba(148, 133, 161, 1);
+  --iconheavydeep-heavy-icon-teal: rgba(132, 151, 160, 1);
+  --iconheavygrey-heavy-icon: rgba(163, 163, 163, 1);
+  --iconheavyheavy-icon-blue: rgba(106, 143, 213, 1);
+  --iconheavyheavy-icon-green: rgba(108, 197, 151, 1);
+  --iconheavyheavy-icon-orange: rgba(218, 146, 98, 1);
+  --iconheavyheavy-icon-purple: rgba(127, 106, 213, 1);
+  --iconheavyheavy-icon-red: rgba(213, 106, 106, 1);
+  --iconheavyheavy-icon-yellow: rgba(213, 175, 106, 1);
+  --iconheavysocialfacebook: rgba(66, 103, 178, 1);
+  --iconheavysocialgoogle: rgba(219, 74, 57, 1);
+  --iconheavysocialtwitter: rgba(29, 161, 242, 1);
+  --iconheavysoft-heavy-icon-blue: rgba(168, 175, 181, 1);
+  --iconheavysoft-heavy-icon-cream: rgba(212, 201, 194, 1);
+  --iconheavysoft-heavy-icon-green: rgba(174, 181, 168, 1);
+  --iconheavysoft-heavy-icon-purple: rgba(171, 168, 181, 1);
+  --iconheavysoft-heavy-icon-red: rgba(181, 168, 168, 1);
+  --iconheavywhite-heavy-icon: rgba(240, 240, 240, 1);
+  --iconindicatorgreen-mark: rgba(110, 158, 153, 1);
+  --iconindicatorred-mark: rgba(176, 99, 99, 1);
+  --iconsimpleconvex: rgba(227, 227, 227, 1);
+  --iconsimpledeep-status-icon-blue: rgba(121, 129, 147, 1);
+  --iconsimpledeep-status-icon-brown: rgba(130, 114, 114, 1);
+  --iconsimpledeep-status-icon-green: rgba(132, 160, 148, 1);
+  --iconsimpledeep-status-icon-pink: rgba(179, 147, 161, 1);
+  --iconsimpledeep-status-icon-teal: rgba(132, 151, 160, 1);
+  --iconsimpledeep-status-icon-violet: rgba(148, 133, 161, 1);
+  --iconsimpledent: rgba(225, 225, 225, 1);
+  --iconsimplesoft-status-icon-blue: rgba(168, 175, 181, 1);
+  --iconsimplesoft-status-icon-green: rgba(174, 181, 168, 1);
+  --iconsimplesoft-status-icon-purple: rgba(171, 168, 181, 1);
+  --iconsimplesoft-status-icon-red: rgba(181, 168, 168, 1);
+  --iconsimplestatus-icon-black: rgba(85, 85, 85, 1);
+  --iconsimplestatus-icon-blue: rgba(106, 143, 213, 1);
+  --iconsimplestatus-icon-green: rgba(108, 197, 151, 1);
+  --iconsimplestatus-icon-grey: rgba(211, 211, 211, 1);
+  --iconsimplestatus-icon-orange: rgba(218, 146, 98, 1);
+  --iconsimplestatus-icon-purple: rgba(127, 106, 213, 1);
+  --iconsimplestatus-icon-red: rgba(213, 106, 106, 1);
+  --iconsimplestatus-icon-white: rgba(237, 237, 237, 1);
+  --iconsimplestatus-icon-yellow: rgba(213, 175, 106, 1);
+  --screen-backgroundsdark-glassmorphismscreen-bg-dark-blue: rgba(
+    39,
+    42,
+    55,
+    1
+  );
+  --screen-backgroundsdark-glassmorphismscreen-bg-dark-gold: rgba(
+    55,
+    53,
+    39,
+    1
+  );
+  --screen-backgroundsdark-glassmorphismscreen-bg-dark-green: rgba(
+    39,
+    55,
+    42,
+    1
+  );
+  --screen-backgroundsdark-glassmorphismscreen-bg-dark-purple: rgba(
+    47,
+    39,
+    55,
+    1
+  );
+  --screen-backgroundsdark-glassmorphismscreen-bg-dark-red: rgba(55, 39, 39, 1);
+  --screen-backgroundsdark-glassmorphismscreen-bg-dark-teal: rgba(
+    39,
+    54,
+    55,
+    1
+  );
+  --screen-backgroundsscreen-bg-blue: rgba(106, 143, 213, 1);
+  --screen-backgroundsscreen-bg-deep-blue: rgba(114, 119, 130, 1);
+  --screen-backgroundsscreen-bg-deep-brown: rgba(130, 114, 114, 1);
+  --screen-backgroundsscreen-bg-deep-green: rgba(132, 160, 148, 1);
+  --screen-backgroundsscreen-bg-deep-grey: rgba(135, 135, 135, 1);
+  --screen-backgroundsscreen-bg-deep-pink: rgba(179, 147, 161, 1);
+  --screen-backgroundsscreen-bg-deep-purple: rgba(148, 133, 161, 1);
+  --screen-backgroundsscreen-bg-deep-teal: rgba(132, 151, 160, 1);
+  --screen-backgroundsscreen-bg-orange: rgba(218, 146, 98, 1);
+  --screen-backgroundsscreen-bg-purple: rgba(127, 106, 213, 1);
+  --screen-backgroundsscreen-bg-red: rgba(213, 106, 106, 1);
+  --screen-backgroundsscreen-bg-soft-blue: rgba(194, 202, 212, 1);
+  --screen-backgroundsscreen-bg-soft-cream: rgba(212, 201, 194, 1);
+  --screen-backgroundsscreen-bg-soft-green: rgba(194, 212, 205, 1);
+  --screen-backgroundsscreen-bg-soft-pink: rgba(212, 194, 201, 1);
+  --screen-backgroundsscreen-bg-soft-red: rgba(212, 194, 194, 1);
+  --screen-backgroundsscreen-bg-soft-teal: rgba(194, 209, 212, 1);
+  --screen-backgroundsscreen-bg-white: rgba(233, 234, 234, 1);
+  --screen-backgroundsscreen-bg-yellow: rgba(213, 175, 106, 1);
+  --text-body-text-black: -1px -1px 2px 0px rgba(255, 255, 255, 1);
+  --text-digital-display-digital-display-text-classic: 1px 1px 2px 0px
+    rgba(0, 0, 0, 0.12);
+  --text-digital-display-digital-display-text-light-big: 0px 0px 3px 0px
+      rgba(255, 255, 255, 1),
+    0px 0px 9px 0px rgba(255, 255, 255, 1);
+  --text-digital-display-digital-display-text-light-med: 0px 0px 3px 0px
+      rgba(255, 255, 255, 1),
+    0px 0px 6px 0px rgba(255, 255, 255, 1);
+  --text-digital-display-digital-display-text-light-small: 0px 0px 3px 0px
+      rgba(255, 255, 255, 1),
+    0px 0px 6px 0px rgba(255, 255, 255, 0.6);
+  --text-field-glass-text-field-font-family: "Montserrat", Helvetica;
+  --text-field-glass-text-field-font-size: 16px;
+  --text-field-glass-text-field-font-style: normal;
+  --text-field-glass-text-field-font-weight: 400;
+  --text-field-glass-text-field-letter-spacing: 0.003312695538625121px;
+  --text-field-glass-text-field-line-height: 19px;
+  --text-field-text-field-font-family: "Montserrat", Helvetica;
+  --text-field-text-field-font-size: 16px;
+  --text-field-text-field-font-style: normal;
+  --text-field-text-field-font-weight: 500;
+  --text-field-text-field-ina-font-family: "Montserrat", Helvetica;
+  --text-field-text-field-ina-font-size: 16px;
+  --text-field-text-field-ina-font-style: normal;
+  --text-field-text-field-ina-font-weight: 400;
+  --text-field-text-field-ina-letter-spacing: 0.003312695538625121px;
+  --text-field-text-field-ina-line-height: 19px;
+  --text-field-text-field-letter-spacing: 0.003312695538625121px;
+  --text-field-text-field-line-height: 19px;
+  --text-header-text: -1px -1px 2px 0px rgba(255, 255, 255, 1),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  --text-indication-carved: 1px 1px 1px 0px rgba(255, 255, 255, 0.4);
+  --textbody-textblack: rgba(53, 53, 53, 1);
+  --textdigital-display-textdigital-display-text-classic: rgba(53, 53, 53, 1);
+  --textdigital-display-textdigital-display-text-classic-off: rgba(
+    89,
+    89,
+    89,
+    0.08
+  );
+  --textheader-textblack: rgba(81, 81, 81, 1);
+  --textheader-textglass-white: rgba(255, 255, 255, 1);
+  --textheader-textgreen: rgba(116, 163, 148, 1);
+  --textheader-textgrey: rgba(163, 163, 163, 1);
+  --textheader-textlight: rgba(255, 255, 255, 0.8);
+  --textindication-carvedblack: rgba(81, 81, 81, 1);
+  --textindication-carvedred: rgba(190, 94, 94, 1);
+  --textindication-carvedwhite: rgba(227, 227, 227, 1);
+  --textlabel-textlabel-text: rgba(113, 113, 113, 1);
+  --textlabel-textlabel-text-red: rgba(188, 124, 124, 1);
+}

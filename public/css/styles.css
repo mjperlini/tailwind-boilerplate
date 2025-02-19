@@ -1,10 +1,60 @@
-/* This lets the bar to transform into a 'X' when it is clicked. */
-#hamburger.active .bar:nth-of-type(1) {
-	transform: rotate(45deg) translateY(10px);
+@import "styleguide.css";
+
+/* https://stackoverflow.com/questions/5706963/possible-to-use-border-radius-together-with-a-border-image-which-has-a-gradient */
+.border-g {
+  color: wheat;
+  position: relative;
+  padding: 20px 30px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 30px;
 }
-#hamburger.active .bar:nth-of-type(2) {
-	display: none;
+
+.border-g::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 10px;
+  background: var(--background-glassglass-stroke);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
 }
-#hamburger.active .bar:nth-of-type(3) {
-	transform: rotate(-45deg) translateX(-4px) translateY(-5px);
+
+.buttons-glass {
+  height: 54px;
+  width: 308px;
+}
+
+.buttons-glass .button {
+  all: unset;
+  -webkit-backdrop-filter: blur(27.18px) brightness(100%);
+  backdrop-filter: blur(27.18px) brightness(100%);
+  background-color: var(--button-background-glassglass-button-bg);
+  border-image: var(--background-glassglass-stroke) 10;
+  border-image-width: 1px;
+  border-style: solid;
+  border-radius: 300px;
+  box-shadow: var(--button-background-glass-glass-button);
+  box-sizing: border-box;
+  /* mix-blend-mode: soft-light; */
+  height: 54px;
+  width: 100%;
+  position: relative;
+}
+
+.buttons-glass .text-wrapper {
+  color: var(--textheader-textglass-white);
+  font-family: var(--button-standard-font-family);
+  font-size: var(--button-standard-font-size);
+  font-style: var(--button-standard-font-style);
+  font-weight: var(--button-standard-font-weight);
+  left: 36px;
+  letter-spacing: var(--button-standard-letter-spacing);
+  line-height: var(--button-standard-line-height);
+  position: absolute;
+  text-align: center;
+  top: 13px;
+  width: 236px;
 }
